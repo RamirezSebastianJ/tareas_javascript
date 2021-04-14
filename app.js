@@ -49,7 +49,6 @@ function obtenerTareas(){
 }
 
 function eliminarTarea(titulo){
-    console.log(titulo);
     let tareas = JSON.parse(localStorage.getItem('tareas'));
     for(let i=0; i < tareas.length; i++){
         if(tareas[i].titulo === titulo){
